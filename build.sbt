@@ -5,19 +5,20 @@ name := "scala-akka-env"
 version := "1.0"
 
 scalaVersion := "2.12.1"
+val akkaVersion = "2.5.4"
 
 libraryDependencies ++= Seq(
   // Typesafe
   "com.typesafe.play" % "play-json_2.11" % "2.5.4",
-  "com.typesafe.akka" %% "akka-slf4j" % "2.4.14",
-  "com.typesafe.akka" %% "akka-actor" % "2.4.14",
+  "com.typesafe.akka" %% "akka-slf4j" % akkaVersion,
+  "com.typesafe.akka" %% "akka-actor" % akkaVersion,
   // Scala JS
 
   // Akka cluster
-  "com.typesafe.akka" %% "akka-cluster" % "2.4.14",
-  "com.typesafe.akka" %% "akka-cluster-sharding" % "2.4.14",
+  "com.typesafe.akka" %% "akka-cluster" % akkaVersion,
+  "com.typesafe.akka" %% "akka-cluster-sharding" % akkaVersion,
   // Akka persistence
-  "com.typesafe.akka" %% "akka-persistence" % "2.4.14",
+  "com.typesafe.akka" %% "akka-persistence" % akkaVersion,
   "com.typesafe.akka" %% "akka-persistence-query-experimental" % "2.4.14",
   "com.typesafe.akka" %% "akka-persistence-cassandra" % "0.21",
   "com.github.dnvriend" %% "akka-persistence-inmemory" % "2.4.17.3",

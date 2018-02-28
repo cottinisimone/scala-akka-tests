@@ -48,7 +48,7 @@ class ActorReceiveSides extends Actor {
   }
 
   override def postStop: Unit = {
-    context.system.shutdown()
+    context.system.terminate()
   }
 }
 
